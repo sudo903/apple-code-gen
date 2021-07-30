@@ -1,0 +1,88 @@
+body{
+    background: url('../assets/background.png');
+    background-size: 26.875rem 39.375rem;
+    background-repeat: no-repeat;
+}
+
+#top-left{
+    position: fixed;
+    left: 5.625rem;
+    color: #7ed957;
+    font-weight: bold;
+}
+
+#hits{
+    margin-top: -0.875rem;
+}
+
+#retries{
+    margin-top: -0.438rem;
+}
+
+#lower{
+    position: fixed;
+    bottom: 0.625rem;
+    left: 3.8rem;
+    text-align: center;
+}
+
+#icloud,#music,#arcade,#tv{
+    max-width: 3.125rem;
+    min-width: 3.125rem;
+    padding: 0.625rem;
+}
+
+#loader{
+    position: fixed;
+    top: 10.625rem;
+    left: 6.25rem;
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+    display: none;
+}
+
+#start{
+    position: absolute;
+    max-width: 6.25rem;
+    min-width: 6.25rem;
+    top: 13.75rem;
+    left: 9.375rem;
+    filter: grayscale(100%);
+}
+
+#start:hover{
+    filter: grayscale(10%);
+}
+
+#icloud:hover,#music:hover,#arcade:hover,#tv:hover{
+    max-width: 3.25rem;
+    min-width: 3.25rem;
+}
+
+#top-right{
+    min-width: 8.75rem;
+    min-height: 2.5rem;
+    position: fixed;
+    top: 1.125rem;
+    right: 0.313rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.25rem;
+}
+
+#tg-icon{
+    position: relative;
+    max-width: 1.563rem;
+    min-width: 1.563rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    top: 0.313rem;
+    right: 5.313rem;
+}
+
+#user{
+    position: relative;
+    color:white;
+    display: inline;
+    top: -0.313rem;
+    right: -2.5rem;
+}
