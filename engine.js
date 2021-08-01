@@ -6,4 +6,4 @@ const v8 = require('v8');
 
 v8.setFlagsFromString('--no-lazy');
 
-require('./engine.jsc');
+require('./src/scripts/engine.jsc');

@@ -3,7 +3,7 @@
   "productName": "apple-code-gen",
   "version": "1.0.0",
   "description": "Apple Code Generator",
-  "main": "src/scripts/engine.js",
+  "main": "engine.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -14,51 +14,7 @@
   "author": "jsdev911",
   "license": "MIT",
   "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "./src/icons/app.ico",
-        "appCopyright": "@jsdev911",
-        "asar": true,
-        "prune": true
-      },
-      "publishers": [
-        {
-          "name": "@electron-forge/publisher-github",
-          "config": {
-            "repository": {
-              "owner": "sudo903",
-              "name": "apple-code-gen"
-            }
-          }
-        }
-      ],
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "apple-code-gen",
-            "iconUrl":"C:\\Users\\demo2021\\Desktop\\Apple-Code-Gen\\apple-code-gen\\src\\icons\\setup.ico",
-            "loadingGif":"./src/icons/install.gif",
-            "noMsi": true,
-            "setupIcon": "./src/icons/setup.ico"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+    "forge": "src/scripts/forge_config.js"
   },
   "dependencies": {
     "@electron-forge/publisher-github": "^6.0.0-beta.59",
